@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h2>Formulario basico</h2> <!-- post me lo envia por debajo y el get lo concatena en la url y los cambios se ven en la url-->
+        <form action="procesar.php" method="post"> <!-- action es para poder ponerle un servidor-->
+            <label>Nombre:</label>
+            <input type="text" name="nombre"/>
+            <br>
+            <br>
+            <label>Edad:</label>    <!-- una etiqueta de texto -->
+            <input type="number" name="edad" placeholder="su edad aqui"/>  <!-- crear un imput de tipo numero nombre edad y un texto-->
+            <br>
+            <br>
+            <input type="submit" value="Enviar"/>   <!-- sumir crea un boton y value boton de envio -->    
+        </form>
+
+
+
+    </body>
+</html>

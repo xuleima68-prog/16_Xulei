@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Formulario de contacto</h1>
+        <form action="mailto:sonia.curielfidalgo@educa.madrid.org" method="post"> <!-- en vez de enviar cosas a un servidor lo envia al correo-->
+            <input type="radio" name="color" value="amarillo"/> Amarillo<br>
+            <input type="radio" name="color" value="verde"/> Verde<br>
+            <input type="radio" name="color" value="rojo"/> Rojo<br><br>
+<!-- radio sirve para opciones de solo una seleccion-->
+            <label>Selecciona tus intereses:</label><br>
+            <input type="checkbox" name="interes" value="deportes"/> Deportes<br>
+            <input type="checkbox" name="interes" value="musica"/> Música<br>
+            <input type="checkbox" name="interes" value="tecnologia"/> Tecnología<br>
+            <input type="checkbox" name="interes" value="arte"/> Arte<br><br>
+<!-- checkbox permite seleccion multiple-->
+            <input type="submit" value="Enviar"/>
+        </form>
+    </body>
+</html>
