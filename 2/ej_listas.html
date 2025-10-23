@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form >
+            <label>algo</label><br>
+            <input list="frutas_lista" name="frutas" placeholder="Escribe la fruta"/>
+            <datalist id="frutas_lista">  <!--datalist le da opciones de seleccion al usuario pero si el usuario 
+                escribe algo le da una o varias opciones que coincidan con lo que el haya escrito-->
+                <option label="Manzana" value="manzana"></option>
+                <option label="Pera"value="pera"></option>
+                <option label="Platano"value="plátano"></option>
+                <option label="Naranja"value="naranja"></option>
+                <option label="Kiwi"value="kiwi"></option>
+            </datalist><br><br>
+            <label>Superheroe favorito</label><br>
+                <select name="Superheroe">  <!-- select sirve para dar opciones al usuario pero el cual no puede escribir-->
+                    <option value="">------------</option>
+                    <option value ="spiderman">Spiderman</option>  
+                    <option value ="ironman">Ironman</option>
+                    <option value ="capitanamerica">Capitan America</option>
+                    <option value ="hulk">Hulk</option>
+                    <option value ="thor">Thor</option>
+                </select><br>
+        </form>
+    </body>
+</html>
