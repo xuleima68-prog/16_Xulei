@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Formulario</title>
-    </head>
-    <body>
-        <form method="post">
-            <fieldset>
-                <legend>Personaje</legend>
-                <label>Superheroe favorito</label><br>
-            <input list="superheroe_lista" name="superheroe" placeholder="Escribe el superheroe"/>
-            <datalist id="superheroe_lista">  <!--datalist le da opciones de seleccion al usuario pero si el usuario 
-                escribe algo le da una o varias opciones que coincidan con lo que el haya escrito-->
+
+<head>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Superheroe favorito</label><br>
+            <input list="superheroe_lista" name="superheroe" placeholder="Escribe el superheroe" />
+            <datalist id="superheroe_lista">
                 <option label="Hulk" value="hulk"></option>
-                <option label="Spiderman"value="spiderman"></option>
-                <option label="Thor"value="thor"></option>
-                <option label="Capitan america"value="capitanamerica"></option>
-                <option label="Iron man"value="ironman"></option>
+                <option label="Spiderman" value="spiderman"></option>
+                <option label="Thor" value="thor"></option>
+                <option label="Capitan america" value="capitanamerica"></option>
+                <option label="Iron man" value="ironman"></option>
             </datalist><br>
-                <label>Color</label><br>
-                <input type="color">
-            </fieldset>
-            <fieldset>
-                <legend>Datos de contacto</legend>
-                <label>Nombre</label><br>
-                <input type="text" name="nombre"><br>
-                <label>Telefono de contacto</label><br>
-                <input type="number" name="telefono"><br>
-                <label>Formato +34 123456789</label>
-            </fieldset>
-            <input type="submit">
-        </form>
-        
-    </body>
+            <label>Color</label><br>
+            <input type="color" name="color">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label>Nombre</label><br>
+            <input type="text" name="nombre"><br>
+            <label>Telefono de contacto</label><br>
+            <input type="number" name="telefono"><small>Formato +34 123456789</small>
+        </fieldset>
+        <input type="submit">
+    </form>
+
+</body>
+
 </html>
