@@ -3,35 +3,42 @@ h1 {
 }
 
 h2 {
-  color: darkred;
+  color: rgb(188, 35, 202);
 }
 
 p {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
+
 code {
   color: blue;
 }
+
 h3 {
   font-style: italic;
 }
-.negrita {
-  font-weight: bold;
-}
+
 .gray {
   color: gray;
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .green {
   color: green;
   font-weight: bold;
 }
+
 .red {
   color: red;
   font-weight: bold;
 }
+
 #cursiva {
   font-style: italic;
+}
+
+span {
+  font-weight: bold;
 }
