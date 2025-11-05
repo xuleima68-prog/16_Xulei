@@ -1,0 +1,56 @@
+th {
+  background-color: lightblue;
+}
+
+td {
+  text-align: center;
+}
+
+.sor {
+  background-color: pink;
+}
+
+.apweb {
+  background-color: lightblue;
+}
+
+.python {
+  background-color: green;
+}
+
+.seguridad {
+  background-color: orange;
+}
+
+.servred {
+  background-color: rgb(238, 153, 238);
+}
+
+.sostenibilidad {
+  background-color: yellow;
+}
+
+.digitalizacion {
+  background-color: brown;
+}
+
+.ingles {
+  background-color: gray;
+}
+
+.itiemple {
+  background-color: rgb(104, 248, 229);
+}
+
+.fecha {
+  background-color: lightgreen;
+}
+
+body {
+  margin-left: 20;
+  margin-top: 20;
+  margin-right: 20;
+  margin-bottom: 20;
+}
+
+
