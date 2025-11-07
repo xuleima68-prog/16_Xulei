@@ -1,51 +1,3 @@
-th {
-  background-color: lightblue;
-}
-
-td {
-  text-align: center;
-}
-
-.sor {
-  background-color: pink;
-}
-
-.apweb {
-  background-color: lightblue;
-}
-
-.python {
-  background-color: green;
-}
-
-.seguridad {
-  background-color: orange;
-}
-
-.servred {
-  background-color: rgb(238, 153, 238);
-}
-
-.sostenibilidad {
-  background-color: yellow;
-}
-
-.digitalizacion {
-  background-color: brown;
-}
-
-.ingles {
-  background-color: gray;
-}
-
-.itiemple {
-  background-color: rgb(104, 248, 229);
-}
-
-.fecha {
-  background-color: lightgreen;
-}
-
 body {
   margin-left: 20;
   margin-top: 20;
@@ -53,4 +5,97 @@ body {
   margin-bottom: 20;
 }
 
+thead > tr:first-child > th:first-child {
+  background-color: white;
+}
 
+th {
+  background-color: rgb(111, 194, 221);
+}
+
+th:hover {
+  background-color: rgb(66, 202, 179);
+  color: rgb(211, 61, 191);
+}
+
+td {
+  text-align: center;
+  border: 5px outset;
+}
+
+td:hover {
+  background-color: rgb(66, 202, 179);
+  color: rgb(211, 61, 191);
+}
+
+caption {
+  text-align: center;
+  background-color: purple;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: 3px solid black;
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.hora {
+  background-color: rgb(211, 72, 199);
+  border-radius: 10px;
+  color: white;
+}
+
+.recreo {
+  background-color: lightcoral;
+  border-radius: 10px;
+}
+
+.fecha {
+  background-color: rgb(109, 240, 240);
+  border-radius: 10px;
+}
+
+.apweb span {
+  visibility: hidden;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.apweb:hover span {
+  visibility: visible;
+  background-color: rgb(135, 206, 250);
+}
+
+.ingles:hover {
+  background-color: rgb(144, 238, 144);
+}
+
+.servred:hover {
+  background-color: rgb(255, 182, 193);
+}
+
+.sor:hover {
+  background-color: rgb(255, 228, 181);
+}
+
+.python:hover {
+  background-color: rgb(221, 160, 221);
+}
+
+.seguridad:hover {
+  background-color: rgb(240, 230, 140);
+}
+
+.digitalizacion:hover {
+  background-color: rgb(197, 129, 102);
+}
+
+.itiemple:hover {
+  background-color: rgb(175, 238, 238);
+}
+
+.recreo:hover {
+  background-color: black;
+}
