@@ -3,7 +3,48 @@
     <head>
         <title>Felex Layout</title>
         <style>
-
+            .container{
+                display: flex;
+                justify-content: right;
+                flex-direction: row;
+                background-color: rgb(43, 255, 0);
+                padding: 10px;
+                border: 1px solid black;
+            }
+            .container div{
+                background-color: rgb(84, 137, 184);
+                padding: 5px;
+                margin: 3px;
+            }
+            .container2{
+                display: flex;
+                justify-content: left;
+                flex-direction: row;
+                background-color: rgb(0, 0, 0);
+                padding: 10px;
+                border: 1px solid black;
+            }
+            .container div{
+                background-color: rgb(44, 149, 240);
+                padding: 5px;
+                margin: 3px;
+            }
+            #nav{
+                background-color: beige;
+            }
+            #nav ul{
+                display: flex;
+                justify-content:center ;
+                list-style: circle;
+            }
+            #nav{
+                background-color: beige;
+            }
+            #nav ul{
+                display: flex;
+                justify-content:center ;
+                list-style: circle;
+            }
         </style>
     </head>
 
@@ -14,5 +55,19 @@
             <div class="caja">Botón 3</div>
             <div class="caja">Botón 4</div>
         </div>
+        <div class="container2">
+            <div class="caja">Botón 1</div>
+            <div class="caja">Botón 2</div>
+            <div class="caja">Botón 3</div>
+            <div class="caja">Botón 4</div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
