@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex</title>
+        <style>
+            .menu-caja{
+                display: flex;
+                justify-content: center;
+                flex-direction: row-reverse;
+                background-color: red;
+                padding: 10px;
+                border: 1px solid black;
+                /*width: 100px;*/
+            }
+
+            .menu-caja div{
+                background-color: rgb(84, 137, 184);
+                border: 1px solid brown;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            #menu-1 ul{
+                display: flex;
+                list-style-type: none;
+                background-color: aqua;
+                border: 1px solid black;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #menu-1 ul li{
+                background-color: rgb(74, 199, 141);
+                border: 1px solid black;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            #menu-1 ul li a{
+                text-decoration: none;
+                color: azure;
+            }
+
+            #menu-1 ul li a:visited{
+                text-decoration: none;
+                color: azure;
+            }
+        </style>
+        </style>
+    </head>
+
+    <body>
+        <div class="menu-caja">
+            <div>Caja 1</div>
+            <div>Caja 2</div>
+            <div>Caja 3</div>
+            <div>Caja 4</div>
+        </div>
+        <nav id="menu-1">
+            <ul>
+                <li><a href="#">Pagina 1</a></li>
+                <li><a href="#">Pagina 2</a></li>
+                <li><a href="#">Pagina 3</a></li>
+            </ul>
+        </nav>
+    </body>
+
+
+
+
+
+
+
+</html>
