@@ -5,6 +5,28 @@ body {
     line-height: 1.8em;
 }
 
+h1 {
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h3,
+h4 {
+    font-weight: bold;
+}
+
+main {
+    max-width: 1140px;
+}
+
+main section:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
 a {
     color: #1c9c94;
     text-decoration: none;
@@ -50,32 +72,22 @@ header img {
 
 .container{
     display: grid;
-    grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
-    "advance-knowledge, basic-knowladge";
+    "advance-knowledge basic-knowledge"
+    "languages languages";
 }
 
-h1 {
-    text-transform: uppercase;
-    margin: 1em 0;
+.advance-knowledge{
+    grid-area: advance-knowledge;
+} 
+
+.basic-knowledge{
+    grid-area: basic-knowledge;
 }
 
-h3 {
-    text-transform: uppercase;
-}
-
-h3,
-h4 {
-    font-weight: bold;
-}
-
-main {
-    max-width: 1140px;
-}
-
-main section:not(:last-child) {
-    border-bottom: 1px solid #ccc;
+.languages{
+    grid-area: languages;
 }
 
 .fab {
@@ -87,48 +99,6 @@ a .fab {
     color: white;
 }
 
-.course,
-.skills {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.course .title {
-    color: #509e98;
-    -ms-flex: 0 0 33.3%;
-    flex: 0 0 33.3%;
-    max-width: 33%;
-}
-
-.course .descrition {
-    -ms-flex: 0 0 66.6%;
-    flex: 0 0 66.6%;
-    max-width: 66.6%;
-}
-
-.course .descrition p {
-    padding-left: 1em;
-}
-
-.skills .column {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.skills .column ul,
-ul.job-description {
-    list-style-type: none;
-}
-
-.skills .column ul > li:before {
-    content: "►";
-    padding-right: 0.5em;
-    color: #509e98;
-}
-
 .school,
 .job-title {
     text-transform: capitalize;
@@ -138,19 +108,6 @@ ul.job-description {
 .job-title span {
     color: #889499;
     text-decoration: underline;
-}
-
-ul.job-description li:before {
-    content: "✔";
-    padding-right: 0.5em;
-    color: #509e98;
-}
-
-footer {
-    padding: 1em 1.5em;
-    background: #a7b8bf;
-    color: white;
-    text-align: right;
 }
 
 .social-links {
@@ -192,37 +149,20 @@ ul>li:before {
     color: #509e98;
 }
 
-.experience>ul>li {
+#experience ul li {
     list-style-type: none;
 }
 
-.experience>ul>li:before {
+
+#experience ul>li:before {
     content: "✔";
     padding-right: 0.5em;
     color: #509e98;
 } 
 
-@media only screen and (max-width: 768px) {
-    .course {
-        display: block;
-    }
-    
-    .course .title,
-    .course .descrition {
-        max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .skills {
-        display: block;
-    }
-
-.skills .column {
-    max-width: 100%;
-}
-
 footer {
-    text-align: center;
-}
+    padding: 1em 1.5em;
+    background: #a7b8bf;
+    color: white;
+    text-align: right;
 }
