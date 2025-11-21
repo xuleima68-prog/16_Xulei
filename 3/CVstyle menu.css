@@ -12,15 +12,12 @@ h1 {
 
 h3 {
     text-transform: uppercase;
+    color: #3c84cc;
 }
 
 h3,
 h4 {
     font-weight: bold;
-}
-
-main {
-    max-width: 1140px;
 }
 
 main section:not(:last-child) {
@@ -45,10 +42,8 @@ section {
     padding: 1em;
 }
 
-header,
-main,
-footer {
-    margin: 0 auto;
+main{
+    min-height: 100vh;
 }
 
 header {
@@ -182,14 +177,16 @@ header nav li{
     display: flex;
     font-size: large;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid rgb(104, 132, 134);
     background-color: #72a2d1;
+    padding: 10px;
 }
 
 nav li.active{
     font-weight: bold;
     text-decoration: underline;
     font-style: italic;
+    border: 1px solid white;
 }
 
 nav li.active:hover{
