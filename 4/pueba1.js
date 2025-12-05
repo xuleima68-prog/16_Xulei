@@ -7,8 +7,13 @@ console.log(mensaje);
 console.log("Hola mundo");
 console.log(document);
 console.log(localStorage);
+
 var esViernes = true;  
 console.log("Es viernes " + esViernes);
 if (esViernes == true) {
     console.log("Por fin es viernes vete a la meir Guillermo");
 }
+
+var nombreUser= prompt("Cual es tu nombre?");
+console.log("Hola " + nombreUser);
+document.write("<h1>Hola " + nombreUser + "</h1>");
