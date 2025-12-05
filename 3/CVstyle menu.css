@@ -172,7 +172,7 @@ nav ul{
     justify-content: space-around;
 }
 
-header nav li{
+header nav#menu li{
     text-transform: uppercase;
     display: flex;
     font-size: large;
@@ -191,4 +191,12 @@ nav li.active{
 
 nav li.active:hover{
     cursor: default;
+}
+
+.social-links li:not(:last-child){
+    margin-right: 15px;
+}
+
+.social-links ul{
+    padding-left: 0px;
 }
