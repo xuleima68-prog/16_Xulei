@@ -4,18 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script src="pueba1.js"></script>
     <style>
+        /*------------css------------*/
         body {
             padding: 15px;
         }
+
+        #mensajes {
+            min-height: 100px;
+            width: 150px;
+            background-color: pink;
+        }
     </style>
+    <script src="pueba1.js"></script> <!--se puede asi concatenado a otro documento o...-->
+    <script></script> <!--tener el JS escrito aqui mismo-->
 </head>
 
 <body>
     <!-- comentario en HTML -->
     <h1>Prueba1</h1>
-    
+
+    <form method="post">
+        <label>Nombre: </label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label>Contraseña: </label>
+        <input type="password" id="pass1" name="pass">
+        <br>
+        <label>Repite contraseña: </label>
+        <input type="password" id="pass2" name="pass2">
+    </form>
+
+    <button onclick="enviarFormulario()">Enviar</button>
+
+    <div id="mensajes" onmouseenter="cambiaColor('yellow')" onmouseleave="cambiaColor('pink')"></div> <!--en vez de escribir aqui escribo en el innerHTML de JS-->
 </body>
 
 </html>
