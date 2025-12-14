@@ -7,8 +7,7 @@ function enviarFormulario() {
 
 if (comprobarNota()) {
     var promedio = document.getElementById("promedio").value;
-    div.innerHTML = "<h1>Notable</h1>"; //en vez de escribir en el html document, lo escribimos en el div desde la apertura al cierre
-    div.style.backgroundColor = "green";
+    div.innerHTML = "<h1>Notable</h1>"; 
     }
     else{
         div.innerHTML = "<h1>No notable</h1>";
