@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseenter="adios()" onmouseleave="hola()" id="iddeldiv" style="height:700px; width:700px; background-color:green;"></div>
+    <button onclick="cambiaColor()">Cambiar color</button>
+    <script>
+        function cambiaColor(){
+        var div = document.getElementById('iddeldiv');
+        var divColor = div.style.backgroundColor;
+        if(divColor == "green"){
+            div.style.backgroundColor = "pink";
+        } 
+        else if(divColor == "pink"){
+            div.style.backgroundColor = "blue";
+        }  
+        else{
+            div.style.backgroundColor = "green";
+        }
+}
+        function adios(){
+        document.getElementById("color_div").innerHTML += " ADIOS!";
+        }
+
+        function hola(){
+        document.getElementById("color_div").innerHTML += " HOLA!";
+        }
+    </script>
+</body>
+</html>
